@@ -1,0 +1,14 @@
+extends layout 
+
+block content 
+    h1= title 
+    p Welcome to #{title}
+    form(method='post', action='/login/submit')
+        p
+            label Username:
+            input(type='text', name='username')
+        p
+            label Password:
+            input(type='password', name='password')
+        p
+            input(type='submit', value='Login')
